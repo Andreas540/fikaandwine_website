@@ -121,7 +121,7 @@
             <p>We are currently gathering interest for our first curated experiences.</p>
             <p class="note">This preview uses your email app to prepare an inquiry. Add your business email in the site settings before publishing.</p>
           </div>
-          <form id="inquiry">
+          <form id="inquiry"><label aria-hidden="true" style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden">Website<input name="website" tabindex="-1" autocomplete="off"/></label>
             <div class="fields"><label>Your name<input name="name" placeholder="Full name" required=""/></label><label>Email address<input name="email" placeholder="you@example.com" required="" type="email"/></label></div>
             <div class="fields"><label>Event type<select name="type"><option>Corporate Fika</option><option>Fika &amp; Wine Social</option><option>Private Event</option><option>Something Else</option></select></label><label>Estimated guests<input min="1" name="guests" placeholder="e.g. 35" type="number"/></label></div><label>Tell us about your event<textarea name="details" placeholder="Location, date, ideas, or anything you'd like us to know"></textarea></label><button class="btn" type="submit">Prepare Event Inquiry</button><div aria-live="polite" class="note" id="form-note"></div>
           </form>

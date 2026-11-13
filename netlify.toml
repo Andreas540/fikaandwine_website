@@ -1,0 +1,18 @@
+# Netlify settings for fikaandwine.com
+# The site is plain files: no build step, published from the repository root.
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+# Server-side code and settings are not pages: answer 404 if someone asks for them.
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify.toml"
+  to = "/404"
+  status = 404
+  force = true
