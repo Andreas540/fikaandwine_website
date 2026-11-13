@@ -1023,7 +1023,8 @@ header {
   display: block;
   width: calc(100% + 60px);
   max-width: none;
-  height: 170px;
+  height: auto;
+  aspect-ratio: 4 / 3;
   object-fit: cover;
   margin: 0 -30px 25px;
 }
@@ -1045,9 +1046,6 @@ header {
 }
 
 @media(max-width:850px) {
-  #experiences .experience-photo {
-    height: 210px;
-  }
   #experiences .colombia-visual {
     height: 170px;
   }
